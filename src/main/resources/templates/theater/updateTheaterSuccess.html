@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=icon href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15/svgs/solid/rocket.svg>
+    <title>Update a Theater</title>
+</head>
+<body>
+<div th:insert="/navbar/navbar.html :: navbar">  </div>
+<br><br>
+<div class="container">
+    <h4>Update a Theater</h4>
+    <br>
+    <h1>Theater with ID: <span th:text="${theater.id}"></span> Successfully Updated!</h1>
+    <br>
+    <a style="color: #4285f4; text-decoration: none;" th:href="@{/users/adminHome}">Go Back</a>
+</div>
+</body>
+</html>
